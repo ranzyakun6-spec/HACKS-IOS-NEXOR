@@ -1,0 +1,21 @@
+name: AIMXIOS
+options:
+  bundleIdPrefix: com.aimx
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+targets:
+  AIMXIOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: AIMXIOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.aimx.ios
+        PRODUCT_NAME: AIMXIOS
+        INFOPLIST_KEY_CFBundleDisplayName: AIMX IOS
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
