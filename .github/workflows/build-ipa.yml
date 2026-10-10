@@ -38,6 +38,7 @@ jobs:
           test -d "$APP_PATH"
           mkdir -p "$RUNNER_TEMP/ipa/Payload"
           ditto "$APP_PATH" "$RUNNER_TEMP/ipa/Payload/AIMXIOS.app"
+          cd "$RUNNER_TEMP/ipa"
           /usr/bin/zip -qry "$GITHUB_WORKSPACE/AIMXIOS-unsigned.ipa" Payload
 
       - name: Upload IPA artifact
